@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-03-13 14:54:27.434187",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "total_target",
+  "total_achieved",
+  "total_balance",
+  "achievement_percent",
+  "period_type",
+  "quarterly_targets",
+  "monthly_target_detail_html",
+  "yearly_targets",
+  "monthly_targets"
+ ],
+ "fields": [
+  {
+   "fieldname": "total_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Target",
+   "precision": "2"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_achieved",
+   "fieldtype": "Currency",
+   "label": "Total Achieved",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_balance",
+   "fieldtype": "Currency",
+   "label": "Total Balance",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "achievement_percent",
+   "fieldtype": "Percent",
+   "label": "Achievement %",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "period_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Period Type",
+   "options": "\nYearly\nQuarterly\nMonthly",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.period_type==\"Quarterly\"",
+   "fieldname": "quarterly_targets",
+   "fieldtype": "Table",
+   "label": "Quarterly Targets",
+   "options": "Quarterly Target Detail"
+  },
+  {
+   "depends_on": "eval:doc.period_type==\"Yearly\"",
+   "fieldname": "yearly_targets",
+   "fieldtype": "Table",
+   "label": "Yearly Targets",
+   "options": "Yearly Target Detail"
+  },
+  {
+   "fieldname": "monthly_target_detail_html",
+   "fieldtype": "HTML",
+   "label": "Monthly Target Details"
+  },
+  {
+   "depends_on": "eval:doc.period_type=='Monthly'",
+   "fieldname": "monthly_targets",
+   "fieldtype": "Table",
+   "label": "Monthly Targets",
+   "options": "Monthly Target Detail"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-23 11:42:46.300463",
+ "modified_by": "Administrator",
+ "module": "Salesperson",
+ "name": "Sales Person Target",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

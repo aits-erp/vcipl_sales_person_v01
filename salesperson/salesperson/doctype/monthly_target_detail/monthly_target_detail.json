@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-13 14:54:27.322799",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_xptx",
+  "sales_person",
+  "month",
+  "target_amount",
+  "contribution_",
+  "main_group",
+  "achieved_amount",
+  "jan_target",
+  "feb_target",
+  "mar_target",
+  "apr_target",
+  "may_target",
+  "jun_target",
+  "jul_target",
+  "aug_target",
+  "sep_target",
+  "oct_target",
+  "nov_target",
+  "dec_target"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "column_break_xptx",
+   "fieldtype": "Column Break",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "target_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Last Year Target  ",
+   "precision": "2"
+  },
+  {
+   "fieldname": "contribution_",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Contribution %"
+  },
+  {
+   "fieldname": "column_break_xptx",
+   "fieldtype": "Column Break",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "target_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Last Year Target  ",
+   "precision": "2"
+  },
+  {
+   "fieldname": "contribution_",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Contribution %"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Person",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "achieved_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Last Year Achivement",
+   "precision": "2"
+  },
+  {
+   "fieldname": "jan_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "January"
+  },
+  {
+   "fieldname": "feb_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "February"
+  },
+  {
+   "fieldname": "mar_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "March"
+  },
+  {
+   "fieldname": "apr_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "April"
+  },
+  {
+   "fieldname": "may_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "May"
+  },
+  {
+   "fieldname": "jun_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "June"
+  },
+  {
+   "fieldname": "jul_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "July"
+  },
+  {
+   "fieldname": "aug_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "August"
+  },
+  {
+   "fieldname": "sep_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "September"
+  },
+  {
+   "fieldname": "oct_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "October"
+  },
+  {
+   "fieldname": "nov_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "November"
+  },
+  {
+   "fieldname": "dec_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "December"
+  },
+  {
+   "fieldname": "main_group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Main Group",
+   "options": "\nHard Anodised\nNonstick\nHoreca\nPressure Cookers\nSS Cookware\nHealux\nKraft\nPlatinum\nPlatinum Triply P.cooker\nCast Iron\nBottle\nKraft Pressure Cooker\nElectrical Appliances\nCsd\nRaw Material\nScrap\nCookers Spare Parts\nCircle\nOther Spare\nCarton\nSFG\nSticker & Warranty Card\nTrading SFG\nTrading SFG\nMachinery Spare Parts\nTool\nBag\nPowder\nMachinery\nSpoons\nPolishing\nOther\nCoil\nAssorted Utensils\nFuturetec",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-07 10:13:40.607836",
+ "modified_by": "Administrator",
+ "module": "Salesperson",
+ "name": "Monthly Target Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
