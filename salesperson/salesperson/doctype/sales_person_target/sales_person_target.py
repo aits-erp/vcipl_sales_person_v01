@@ -8,7 +8,7 @@ from frappe.utils import flt
 class SalesPersonTarget(Document):
     def validate(self):
         self.validate_customer()
-        self.validate_year()
+        # self.validate_year()
         self.validate_child_sales_persons()
         self.calculate_parent_totals()
 
@@ -17,7 +17,9 @@ class SalesPersonTarget(Document):
             frappe.throw(_("Customer {0} does not exist").format(self.customer))
 
     def validate_year(self):
-        if self.period_type == "Yearly" and not self.year:
+        year = self.get("year")
+
+        if self.period_type == "Yearly" and not year:
             frappe.throw(_("Please select Fiscal Year"))
 
     def validate_child_sales_persons(self):

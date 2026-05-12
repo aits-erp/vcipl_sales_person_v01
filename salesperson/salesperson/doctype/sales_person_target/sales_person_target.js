@@ -66,11 +66,11 @@ function fetch_customer_data_into_table(frm) {
             }
 
             if (period === "Monthly") {
-                fill_table(frm, "monthly_targets", customer, sales_team, "year");
+                fill_table(frm, "monthly_targets", customer, sales_team);
             } else if (period === "Quarterly") {
-                fill_table(frm, "quarterly_targets", customer, sales_team, "year");
+                fill_table(frm, "quarterly_targets", customer, sales_team);
             } else if (period === "Yearly") {
-                fill_table(frm, "yearly_targets", customer, sales_team, "year_label");
+                fill_table(frm, "yearly_targets", customer, sales_team);
             } else {
                 frappe.msgprint({
                     title: __("Invalid Period Type"),
@@ -91,7 +91,7 @@ function fetch_customer_data_into_table(frm) {
     });
 }
 
-function fill_table(frm, table_fieldname, customer, sales_team, year_fieldname) {
+function fill_table(frm, table_fieldname, customer, sales_team) {
     frm.clear_table(table_fieldname);
 
     sales_team.forEach(st => {
@@ -130,9 +130,9 @@ function fill_table(frm, table_fieldname, customer, sales_team, year_fieldname) 
             row.customer = frm.doc.customer || "";
         }
 
-        if (has_field(row, year_fieldname)) {
-            row[year_fieldname] = frm.doc.year || "";
-        }
+        // if (has_field(row, year_fieldname)) {
+        //     row[year_fieldname] = frm.doc.year || "";
+        // }
 
         // territory / region / location / codes
         if (has_field(row, "territory")) {
