@@ -28,14 +28,6 @@
  ],
  "fields": [
   {
-   "fieldname": "month",
-   "fieldtype": "Select",
-   "hidden": 1,
-   "in_list_view": 1,
-   "label": "Month",
-   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
-  },
-  {
    "fieldname": "column_break_xptx",
    "fieldtype": "Column Break",
    "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
@@ -54,30 +46,12 @@
    "label": "Contribution %"
   },
   {
-   "fieldname": "column_break_xptx",
-   "fieldtype": "Column Break",
-   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
-  },
-  {
    "fieldname": "month",
    "fieldtype": "Select",
    "hidden": 1,
    "in_list_view": 1,
    "label": "Month",
    "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
-  },
-  {
-   "fieldname": "target_amount",
-   "fieldtype": "Currency",
-   "in_list_view": 1,
-   "label": "Last Year Target  ",
-   "precision": "2"
-  },
-  {
-   "fieldname": "contribution_",
-   "fieldtype": "Percent",
-   "in_list_view": 1,
-   "label": "Contribution %"
   },
   {
    "fieldname": "sales_person",
