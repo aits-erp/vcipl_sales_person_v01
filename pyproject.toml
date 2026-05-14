@@ -1,17 +1,9 @@
 [project]
-<<<<<<< HEAD
 name = "salesperson"
 authors = [
     { name = "sai", email = "sai@aitsind.com"}
 ]
 description = "salespersontarget"
-=======
-name = "vinod_report"
-authors = [
-    { name = "Sukku", email = "sukeshanee@gmail.com"}
-]
-description = "Vinod report Creation"
->>>>>>> 71e5f59 (feat: Initialize App)
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
